@@ -7,7 +7,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
-import de.musicAnalyzer.parser.Parser;
+import de.musicAnalyzer.parser.Parser1;
 
 public class MainApplication {
 
@@ -15,11 +15,13 @@ public class MainApplication {
 		
 		String test = "src/sheets/xmlTest.xml";
 		String reunion = "src/sheets/Reunion.xml";
-		File file = new File(reunion);
+		String revStud= "src/sheets/Revolutionary Study.xml";
+		
+		File file = new File(revStud);
 		try {
 			
 			
-			Parser.parse(file);
+			Parser1.parse(file);
 			
 			
 			
